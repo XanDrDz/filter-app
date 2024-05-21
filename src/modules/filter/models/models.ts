@@ -31,13 +31,19 @@ export type DateFilter = {
 };
 
 export type OrFilter = {
-  type: 'or'
+  type: 'or';
   filters: Filter[];
 };
 
 export type AndFilter = {
-  type: 'and'
+  type: 'and';
   filters: Filter[];
 };
 
-export type Filter = StringFilter | NumberFilter | BooleanFilter | DateFilter | OrFilter | AndFilter;
+export type Filter =
+  | StringFilter
+  | NumberFilter
+  | BooleanFilter
+  | DateFilter
+  | OrFilter
+  | AndFilter;
