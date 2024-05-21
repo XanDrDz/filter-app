@@ -58,11 +58,6 @@ describe('FilterService', () => {
     field2: new Date('2030-01-01T12:00:00.000Z').toISOString(),
   };
 
-  const complexMessage4: Message = {
-    field1: 'string',
-    field2: new Date('2030-01-01T12:00:00.000Z').toISOString(),
-  };
-
   const messages: Message[] = [
     boolTrue,
     boolFalse,
